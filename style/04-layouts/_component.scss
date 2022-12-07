@@ -1,0 +1,71 @@
+.component {
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  margin-block: 5rem;
+  display: grid;
+
+  @include breakpoint(700) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  & > * {
+    padding: 2rem;
+  }
+
+  &__header {
+    background-color: $clr-neutral-100;
+    grid-column: 1 / -1;
+
+    & > h1 {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__sign {
+    background-color: hsl(179, 61%, 44%);
+    color: $clr-neutral-100;
+    @include flex(column, flex-start, center, 0.5rem);
+
+    .button {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  }
+
+  &__why-us {
+    @include flex(column, flex-start, center, 0.5rem);
+    background-color: hsl(179, 47%, 52%);
+    color: $clr-neutral-100;
+  }
+
+  &__price {
+    margin-top: 0.5rem;
+    font-size: $fs-700;
+    font-weight: $fw-700;
+    line-height: 1;
+
+    span {
+      font-size: $fs-400;
+      font-weight: $fw-400;
+      color: $clr-neutral-300;
+      opacity: 0.8;
+    }
+  }
+
+  &__item {
+    font-size: $fs-300;
+  }
+
+  &__list {
+    list-style: none;
+    margin-top: 0.5rem;
+    opacity: 0.8;
+  }
+
+  &__highlight {
+    color: $clr-accent-400;
+    font-weight: $fw-700;
+    margin-bottom: 0.5rem;
+  }
+}

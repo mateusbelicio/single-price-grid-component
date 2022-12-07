@@ -1,0 +1,16 @@
+.button {
+  background-color: $clr-accent-400;
+  border-radius: 0.25rem;
+  border: none;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+  color: $clr-neutral-100;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  text-align: center;
+  line-height: 1;
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(95%);
+  }
+}

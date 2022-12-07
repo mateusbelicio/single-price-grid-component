@@ -1,0 +1,18 @@
+:root {
+  /* Colors */
+  --clr-primary-400: hsl(179, 62%, 43%);
+  --clr-accent-400: hsl(71, 73%, 54%);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-300: hsl(204, 43%, 93%);
+  --clr-neutral-400: hsl(218, 22%, 67%);
+}
+
+// VARIABLES TO BE USED
+// These variables don't are rendered on the 'index.css'
+
+$clr-primary-400: var(--clr-primary-400);
+$clr-accent-400: var(--clr-accent-400);
+$clr-neutral-100: var(--clr-neutral-100);
+$clr-neutral-300: var(--clr-neutral-300);
+$clr-neutral-400: var(--clr-neutral-400);
